@@ -1,0 +1,32 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Atlas Analytic Lab
+theme: ["atlastheme"]
+
+menus:
+  main:
+  - name: Publications
+    pageref: /publications
+    weight: 20
+  
+  - name: Team
+    pageref: /team
+    weight: 30
+    
+  - name: News
+    pageref: /news
+    weight: 40
+    
+  - name: Photos
+    pageref: /photos
+    weight: 50
+    
+  - name: About Us
+    pageref: /about
+    weight: 60
+    
+  - name: Contact
+    pageref: /contact
+    weight: 70
+    
+
