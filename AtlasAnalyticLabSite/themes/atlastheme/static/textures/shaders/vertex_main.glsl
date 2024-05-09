@@ -3,7 +3,8 @@
     vec3 coordinates = normal;
     coordinates.y += uTime * 0.3;
     coordinates.x += uTime * 0.3;
-    vec3 noisepattern = vec3(cnoise(coordinates));
+    //vec3 noisepattern = vec3(cnoise(coordinates));
+    vec3 noisepattern = (coordinates);
     float smoothpattern = wavepattern(noisepattern) ; 
 
     vDisplacment = smoothpattern;

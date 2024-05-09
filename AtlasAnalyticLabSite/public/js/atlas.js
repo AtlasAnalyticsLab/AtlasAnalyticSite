@@ -17,9 +17,10 @@ import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
 import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
 
 
+
 			let group;
 			const particlesData = [];
-			let camera, scene, renderer, composer, light, light4, light2, light_helper,light3;
+			let camera, scene, renderer, composer, light, light4, light2, light_helper,light3, light5;
 			let positions, colors;
 			let particles;
 			let pointCloud;
@@ -46,7 +47,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 			const textureLoader = new THREE.TextureLoader();
 				
-			const texture = textureLoader.load('../textures/image6 (2).jpeg')
+			const texture = textureLoader.load('../textures/image5.jpeg')
 
 			texture.colorSpace = THREE.SRGBColorSpace
 	
@@ -88,11 +89,14 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 			function init() {
 				THREE.ColorManagement.enabled = true;
 
-                light = new THREE.PointLight(0xffffff,5, 1100,0);
-				light4 = new THREE.PointLight(0xffffff,5, 1100,0);
-				light2 = new THREE.PointLight(0xffffff,5, 1100,0);
+                light = new THREE.PointLight(0xffffff,4, 1100,0);
+				light4 = new THREE.PointLight(0xffffff,4, 1100,0);
+				light2 = new THREE.PointLight(0xffffff,4, 1100,0);
 				//light_helper = new THREE.PointLightHelper(light2, 5, 'red');
-				light3 = new THREE.PointLight(0xffffff,5, 1100,0);
+				light3 = new THREE.PointLight(0xffffff,4, 1100,0);
+				light5 = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.31);
+
+				
 
 			
 				
@@ -101,12 +105,16 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				light2.position.set(-700, 700, -700);
 				light3.position.set(700, 700, -700);
 				light4.position.set(700, 700, 700);
+				light5.position.set(0,700, 0)
+				
 				//light_helper.position.set(0, -700, 0);
 				//light_ambient.position.set(0, -700, 0);
 	
 				
 				camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 4000 );
 				camera.position.z = 1750;
+				camera.position.y = 250;
+				camera.position.x = 0;
 				
                 
                 
@@ -120,26 +128,15 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 					
 				scene = new THREE.Scene();
                 scene.add(camera);
-				scene.add(light, light4, light2, light_helper, light3);
+				scene.add(light, light4, light2, light_helper, light3, light5);
 				//scene.add(axis_helper);
 				group = new THREE.Group();
 				scene.add( group );
-				const gradient = document.createElement('canvas');
-				const context = gradient.getContext('2d');
 
-				gradient.width = window.innerWidth;
-				gradient.height = window.innerHeight;
-
-				const grd = context.createLinearGradient(0, 0, 0, gradient.height);
-				grd.addColorStop(1, 'black');
-				grd.addColorStop(0, '#36454F'); // Change 'gray' to any color you want the gradient to transition to
-
-				context.fillStyle = grd;
-				context.fillRect(0, 0, gradient.width, gradient.height);
 
 				// Create a texture
-				const backgroundtexture = new THREE.CanvasTexture(gradient);
-				scene.background = backgroundtexture;
+				
+				scene.background = new THREE.Color('#121212');
 
 
 				
@@ -218,6 +215,12 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				group.add( linesMesh );
 
 				//
+				const box = new THREE.Box3().setFromObject(group);
+				const center = box.getCenter(new THREE.Vector3());
+
+				group.position.x = (group.position.x - center.x);
+				group.position.y = (group.position.y - center.y);
+				group.position.z = (group.position.z - center.z);
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
 				

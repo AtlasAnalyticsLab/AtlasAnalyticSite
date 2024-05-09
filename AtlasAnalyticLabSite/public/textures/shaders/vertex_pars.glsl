@@ -251,5 +251,5 @@ float fit(float unscaled, float min, float max, float newMin, float newMax){
 }
 
 float wavepattern(vec3 position){
-    return fit(smoothMod((cos(position.x) *3.2 + sin(position.y) *3.2), 1.0, 1.5), 0.35, 0.6, 0.0, 1.0);
+    return fit(smoothMod((cos(position.x) *0.0 + sin(position.y) *0.0), 1.0, 1.5), 0.35, 0.6, 0.0, 1.0);
 }
