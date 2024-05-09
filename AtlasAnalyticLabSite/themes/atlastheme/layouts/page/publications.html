@@ -1,3 +1,10 @@
 {{define "main" }}
-publications
+<div class="parallax-container flex flex-col justify-center items-center min-h-screen">
+    {{ $pages := where .Site.Pages "Type" "publications" }}
+    {{ range $pages.ByDate.Reverse }}
+        {{ if .File }}
+            {{ partial "publication_card.html" . }}
+        {{ end }}
+    {{ end }}
+  </div>
 {{end}}
