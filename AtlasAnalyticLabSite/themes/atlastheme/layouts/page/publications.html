@@ -1,10 +1,20 @@
 {{define "main" }}
-<div class="parallax-container flex flex-col justify-center items-center min-h-screen">
+
+<div class="parallax-container flex flex-col justify-start items-center h-screen animate-fade animate-duration-[1500ms] ">
+    <h1 class="text-6xl font-semibold text-white text-center animate-fade animate-duration-[1500ms] mt-10 mb-10">Publications</h1>
     {{ $pages := where .Site.Pages "Type" "publications" }}
-    {{ range $pages.ByDate.Reverse }}
+    {{ range $index, $page := $pages.ByDate.Reverse }}
         {{ if .File }}
-            {{ partial "publication_card.html" . }}
+            <div class="scale-100" id="card-{{ $index }}" style="pointer-events: auto;">
+                {{ partial "publication_card.html" . }}
+            </div>
+     
         {{ end }}
     {{ end }}
-  </div>
+    
+
+</div>
+
+
+
 {{end}}

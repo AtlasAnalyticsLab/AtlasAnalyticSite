@@ -8,16 +8,17 @@
   <link rel="stylesheet" href="/main.css">
   {{ partial "head.html" . }}
 </head>
-<body>
+<body class="bg-atlas ">
 
-  <header>
+  <header class="relative z-30">
     {{ partial "header.html" . }}
   </header>
-  <main>
+  <main class="relative z-30">
    
-    
-  <script src="/bundle.js"></script>
+    <div id="canvas-container" class="absolute inset-0 flex justify-center items-center pointer-events-none" >
+</div>
   
+
 
     
     {{ block "main" . }}{{ end }}
@@ -28,4 +29,15 @@
   </footer>
 
 </body>
+{{ if not .IsHome }}
+<div id="canvas-container" class="fixed inset-0 bg-atlas opacity-50 flex justify-center items-center z-20 pointer-events-none" >
+  <script src="/bundle.js"></script>
+</div>
+{{ end }}
+{{ if .IsHome }}
+<div id="canvas-container" class="fixed flex justify-center items-center z-20 pointer-events-none" >
+  <script src="/bundle.js"></script>
+</div>
+{{ end }}
+
 </html>

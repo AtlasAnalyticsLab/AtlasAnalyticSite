@@ -12,6 +12,11 @@ menus:
   - name: Team
     pageref: /team
     weight: 30
+
+  - name: Software
+    pageref: https://github.com/AtlasAnalyticsLab
+    weight: 35
+    
     
   - name: News
     pageref: /news
@@ -21,8 +26,8 @@ menus:
     pageref: /photos
     weight: 50
     
-  - name: About Us
-    pageref: /about
+  - name: Join us
+    pageref: /join-us
     weight: 60
     
   - name: Contact

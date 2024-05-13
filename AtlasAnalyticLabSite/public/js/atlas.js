@@ -47,9 +47,10 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 			const textureLoader = new THREE.TextureLoader();
 				
-			const texture = textureLoader.load('../textures/image5.jpeg')
+			const texture = textureLoader.load('../textures/download (3).jpg')
 
 			texture.colorSpace = THREE.SRGBColorSpace
+			texture.mapping = THREE.EquirectangularReflectionMapping;
 	
 			
 			texture.flipY = false;
@@ -89,12 +90,12 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 			function init() {
 				THREE.ColorManagement.enabled = true;
 
-                light = new THREE.PointLight(0xffffff,4, 1100,0);
-				light4 = new THREE.PointLight(0xffffff,4, 1100,0);
-				light2 = new THREE.PointLight(0xffffff,4, 1100,0);
+                light = new THREE.PointLight(0xffffff,4.5, 1100,0);
+				light4 = new THREE.PointLight(0xffffff,4.5, 1100,0);
+				light2 = new THREE.PointLight(0xffffff,4.5, 1100,0);
 				//light_helper = new THREE.PointLightHelper(light2, 5, 'red');
-				light3 = new THREE.PointLight(0xffffff,4, 1100,0);
-				light5 = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.31);
+				light3 = new THREE.PointLight(0xffffff,4.5, 1100,0);
+				light5 = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.9);
 
 				
 
@@ -145,8 +146,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				
 				
 
-
-				
+		
 				
                 const helper = new THREE.Mesh(new THREE.IcosahedronGeometry(425, 220), shadermaterial);
 
