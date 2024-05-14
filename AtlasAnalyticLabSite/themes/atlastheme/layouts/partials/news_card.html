@@ -1,11 +1,11 @@
 {{ $path := "../" }}
 
-<div class="relative flex bg-clip-border rounded-xl bg-gray-800 text-white shadow-md w-full max-w-[48rem] flex-row">
+<div class="relative flex bg-clip-border rounded-xl bg-gray-800 text-white shadow-md h-[220px] w-full max-w-7xl flex-row mx-auto m-auto">
   <div
-    class="relative w-2/5 m-0 overflow-hidden text-white bg-gray-800 rounded-r-none bg-clip-border rounded-xl shrink-0">
+    class="relative m-0 overflow-hidden text-white bg-gray-800 rounded-r-none bg-clip-border rounded-xl shrink-0">
     <img
       src="{{$path}}/{{ .Params.photo}}"
-      alt="card-image" class="object-cover w-full h-full" />
+      alt="card-image" class="object-contain w-full h-full" />
   </div>
   <div class="p-6">
     <h4 class="block mb-2 font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
@@ -21,5 +21,10 @@
           stroke-width="2" class="w-4 h-4">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
         </svg></button></a>
+    
+        <div class="absolute bottom-0 right-0 p-2 text-md  text-white">
+          {{ $date := time .Params.date }}
+          {{ dateFormat "January 2006" $date }}
+        </div>
   </div>
 </div>  

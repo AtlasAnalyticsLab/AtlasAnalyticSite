@@ -6,4 +6,5 @@ publisher: Arxiv
 date: 2024-04-22
 link: https://arxiv.org/abs/2404.13222
 arxiv: https://arxiv.org/abs/2404.13222
+github: https://github.com/AtlasAnalyticsLab/Vim4Path
 ---

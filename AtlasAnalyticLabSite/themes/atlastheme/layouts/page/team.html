@@ -11,7 +11,7 @@
     
 
     <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-6 3xl:grid-cols-5 lg:mx-96">
-        <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">Director</h2>
+        <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">Lab Director</h2>
     
     {{ range .Site.Pages }}
     {{ if .File }}
@@ -78,8 +78,26 @@
 {{ end }}
     </div>
 </div>
+
+
+<div class = "flex flex-col items-center w-auto animate-fade animate-duration-[1500ms] md: min-h-full">
+
+    
+
+    <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-3 2xl:grid-cols-4 gap-6 3xl:grid-cols-5 lg:mx-96">
+        <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">PI Collaborators</h2>
+    
+    {{ range .Site.Pages }}
+    {{ if .File }}
+        {{ if eq .File.Dir "team\\collaborators\\" }}
+            {{ partial "card.html" . }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+    </div>
+</div>
 {{ $path := "../" }}
-<section class="bg-atlas">
+
 
     <div class="py-8 lg:py-16 flex items-center justify-center flex-col">
          <h2 class="text-4xl font-semibold text-white mt-4 text-center col-span-full">Industrial Collaborators</h2>
@@ -89,7 +107,21 @@
         </a>
 
     </div>
-</section>
+
+
+
+    <div class="py-2 flex items-center justify-center flex-col">
+         <h2 class="text-4xl font-semibold text-white mt-4 text-center col-span-full">Funding Supporters</h2>
+
+         <a href="https://www.nserc-crsng.gc.ca/index_eng.asp" target="_blank">
+            <img class="h-18 w-60 object-cover group-hover:scale-110 transition-transform mt-10 hover:shadow-2xl hover:opacity-60" src="{{$path}}/NSERC_RGB.png">
+        </a>
+        <a href="https://alliancecan.ca/en" target="_blank">
+            <img class="h-18 w-60 object-cover group-hover:scale-110 transition-transform mt-10 hover:shadow-2xl hover:opacity-60" src="{{$path}}/digital_alliance.png">
+        </a>
+
+    </div>
+
 
 
 
