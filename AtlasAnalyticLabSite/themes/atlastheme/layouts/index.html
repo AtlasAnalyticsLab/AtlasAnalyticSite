@@ -2,32 +2,31 @@
 {{ define "main" }}
 
     
-    
-    
-    
-<main class="flex flex-col justify-center items-center h-screen ">
+<main class="flex flex-col justify-center items-center h-screen  lg:space-y-48 2xl:space-y-64">
     <div id="sphere-container"></div>
     
-    <div class="flex flex-col items-center justify-center mb-16">
-        <h1 class="text-white text-8xl lg:text-9xl 2xl:text-11xl font-bold select-none ml-4 animate-fade-down animate-duration-[1000ms]">Atlas Analytic Lab</h1>
+    <div class="flex flex-col items-center justify-center">
+        <h1 class="text-white lg:text-9xl 2xl:text-10xl font-bold select-none animate-fade-down animate-duration-[1000ms]">Atlas Analytics Lab</h1>
     </div>
-    <div class="flex justify-center">
-        <a href="https://www.concordia.ca/ginacody/computer-science-software-eng.html">
-        <h1 class="text-white text-3xl hover:text-gray-300 font-bold select-none ml-4 animate-fade-down animate-duration-[1000ms]">Department of Computer Science and Software Engineering (CSSE)</h1>
-        </a>    
-    </div>
-    <div class="flex justify-center py-1">
-        <a  href="https://www.concordia.ca/ginacody.html">
-        <h1 class="text-white text-3xl   hover:text-gray-300 font-bold select-none  ml-4 animate-fade-down animate-duration-[1000ms]">Gina Cody School of Engineering and Computer Science
-            Concordia University
-            </h1>
-        </a>
-    </div>
-    <div class="flex justify-center py-1">
-        <a  href="https://www.google.com/maps/@45.4969907,-73.5785467,3a,75y,303.83h,90t/data=!3m6!1e1!3m4!1sJe60BT428ydncn8k9zav8Q!2e0!7i16384!8i8192?entry=ttu">
-        <h1 class="text-white text-3xl  hover:text-gray-300 font-bold select-none ml-4 animate-fade-down animate-duration-[1000ms]">1455 De Maisonneuve Blvd. W.
-            Montreal, QC  H3G 1M8 CANADA</h1>
-        </a>
+    <div class="flex flex-col space-y-4">
+        <div class="flex justify-center">
+            <a href="https://www.concordia.ca/ginacody/computer-science-software-eng.html">
+            <h1 class="text-white lg:text-2xl 2xl:text-3xl hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">Department of Computer Science and Software Engineering (CSSE)</h1>
+            </a>    
+        </div>
+        <div class="flex justify-center py-1">
+            <a  href="https://www.concordia.ca/ginacody.html">
+            <h1 class="text-white lg:text-2xl 2xl:text-3xl  hover:text-gray-300 font-bold select-none   animate-fade-down animate-duration-[1000ms]">Gina Cody School of Engineering and Computer Science
+                Concordia University
+                </h1>
+            </a>
+        </div>
+        <div class="flex justify-center py-1">
+            <a  href="https://www.google.com/maps/@45.4969907,-73.5785467,3a,75y,303.83h,90t/data=!3m6!1e1!3m4!1sJe60BT428ydncn8k9zav8Q!2e0!7i16384!8i8192?entry=ttu">
+            <h1 class="text-white lg:text-2xl 2xl:text-3xl  hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">1455 De Maisonneuve Blvd. W.
+                Montreal, QC  H3G 1M8 CANADA</h1>
+            </a>
+        </div>
     </div>
 </main>
 {{ end }}

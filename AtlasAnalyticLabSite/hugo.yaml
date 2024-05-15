@@ -5,6 +5,10 @@ theme: ["atlastheme"]
 
 menus:
   main:
+  - name: Home
+    pageref: /
+    weight: 10
+
   - name: Publications
     pageref: /publications
     weight: 20
@@ -26,8 +30,8 @@ menus:
     pageref: /photos
     weight: 50
     
-  - name: Join us
-    pageref: /join-us
+  - name: Positions
+    pageref: /positions
     weight: 60
     
   - name: Contact

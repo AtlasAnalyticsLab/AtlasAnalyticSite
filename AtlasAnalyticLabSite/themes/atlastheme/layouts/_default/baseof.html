@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/main.css">
   {{ partial "head.html" . }}
 </head>
-<body class="bg-atlas ">
+<body class="bg-atlas {{ if .IsHome }}overflow-hidden{{ end }}">
 
   <header class="relative z-30">
     {{ partial "header.html" . }}

@@ -5,5 +5,5 @@ authors: Mathieu Tuli, Mahdi S. Hosseini, and Konstantinos N. Plataniotis.
 date: 2021-12-12
 publisher: "NeurIPS-OPT2021: 13th Annual Workshop on Optimization for Machine Learning"
 github: 
-link: https://arxiv.org/abs/2111.14056
+link: https://opt-ml.org/papers/2021/paper17.pdf
 ---

@@ -2,44 +2,44 @@
 
 <div class="parallax-container overflow-hidden w-full h-full mt-5">
 
-    <div class="flex flex-col rounded-lg items-center bg-white border border-gray-200 outline h-[200px] w-full outline-atlas shadow md:flex-row dark:border-gray-700 bg-white">
+    <div class="flex flex-col rounded-lg items-center bg-white border border-gray-200 outline h-full w-full outline-atlas shadow md:flex-row dark:border-gray-700 bg-white">
         <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="{{$path}}/{{ .Params.photo}}" alt="">
         <div class="flex flex-col justify-between p-4 leading-normal h-full w-full dark:bg-gray-800">
-            <h5 class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{.Params.name}}</h5>
-            <h5 class="mb-1 text-lg italic tracking-tight text-gray-900 dark:text-white">{{.Params.publisher}}</h5>
-            <p class="mb-1 font-normal text-gray-700 dark:text-white">{{.Params.authors}}</p>
+            <p class=" text-xl font-bold tracking-tight text-gray-900 dark:text-white">{{.Params.name}}</p>
+            <p class=" font-xl text-gray-700 dark:text-white">{{.Params.authors}}</p>
 
         
 
+            <div class="buttons-bottom-right flex space-x-3 absolute bottom-0">
 
+                {{if .Params.publisher}}
+                 <!-- Arxiv -->
+                <a href="{{.Params.link}}"class= "hover:shadow-2xl hover:opacity-60">
+                  
+                    <h6 class="text-white hover:text-gray-300 ">[Publisher]</h6>
+            
+            
+            
+                </a>
+                {{end}}
+            
+                <a href="{{.Params.link}}"class=" hover:shadow-2xl hover:opacity-60">
+                    <h6 class="text-white hover:text-gray-300 ">[Arxiv]</h6>
+                </a>
+                {{if .Params.github}}
+                <a href="{{.Params.arxiv}}"class=" hover:shadow-2xl hover:opacity-60">
+                <h6 class="text-white hover:text-gray-300 ">[Code]</h6>
+                </a>
+                {{end}}
+            
+                </div>
+            
+        </div>
            
             
 
         </div>
         
-    </div>
-    <div class="buttons-bottom-right flex space-x-3 absolute right-1 bottom-1">
 
-    {{if .Params.publisher}}
-     <!-- Arxiv -->
-    <a href="{{.Params.link}}"class= "hover:shadow-2xl hover:opacity-60">
-      
-        <h6 class="text-white hover:text-gray-300 underline">Publisher</h6>
-
-
-
-    </a>
-    {{end}}
-
-    <a href="{{.Params.link}}"class=" hover:shadow-2xl hover:opacity-60">
-        <h6 class="text-white hover:text-gray-300 underline">Arxiv</h6>
-    </a>
-    {{if .Params.github}}
-    <a href="{{.Params.arxiv}}"class=" hover:shadow-2xl hover:opacity-60">
-    <h6 class="text-white hover:text-gray-300 underline">Code</h6>
-    </a>
-    {{end}}
-
-    </div>
     
   </div>
