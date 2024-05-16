@@ -1,54 +1,17 @@
 {{define "main" }}
-<h1 class="sticky top-0 text-6xl font-semibold text-white text-center animate-fade animate-duration-[1500ms] mt-10">Photos</h1>
+{{ $path := "../" }}
+<h1 class="sticky pb-8 top-0 text-6xl font-semibold text-white text-center animate-fade animate-duration-[1500ms] mt-10">Photos</h1>
 
-
-
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mx-96 my-20">
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-        </div>
-    </div>
-    <div class="grid gap-4">
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-        </div>
-    </div>
+<div class="grid md:grid-cols-2 md:mx-16 md:space-x-3 md:pt-16 md:px-16 lg:grid-cols-2 lg:mx-96 2xl:grid-cols-3 2xl:mx-96 transition transfrom hover: scale-125 ">
+    <figure>
+        <img src="{{ $path }}/lab_fun1.jpg" alt="1" class="w-full h-full object-cover rounded-lg">
+        <figcaption class="text-center text-white mt-2">December lab get together</figcaption>
+    </figure>
+    
+    <figure>
+        <img src="{{ $path }}/lab_fun2.jpg" alt="1" class="w-full h-auto object-contain rounded-lg">
+        <figcaption class="text-center text-white mt-2">December lab get together</figcaption>
+    </figure>
 </div>
-
 
 {{end}}

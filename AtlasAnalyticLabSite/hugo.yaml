@@ -5,7 +5,7 @@ theme: ["atlastheme"]
 
 menus:
   main:
-  - name: Home
+  - name: Atlas Analytics Lab
     pageref: /
     weight: 10
 

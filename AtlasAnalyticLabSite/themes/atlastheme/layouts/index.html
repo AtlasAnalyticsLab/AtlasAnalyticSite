@@ -2,29 +2,28 @@
 {{ define "main" }}
 
     
-<main class="flex flex-col justify-center items-center h-screen  lg:space-y-48 2xl:space-y-64">
-    <div id="sphere-container"></div>
+<main class="flex flex-col justify-center items-center h-screen  md: space-y-96 lg:space-y-64 2xl:space-y-88 z-40">
+    <div id="sphere-container" class="z-100"></div>
     
-    <div class="flex flex-col items-center justify-center">
-        <h1 class="text-white lg:text-9xl 2xl:text-10xl font-bold select-none animate-fade-down animate-duration-[1000ms]">Atlas Analytics Lab</h1>
+    <div class="flex flex-col items-center justify-center pointer-events-none">
+        <h1 class="text-white md:text-8xl lg:text-9xl 2xl:text-10xl font-bold select-none animate-fade-down animate-duration-[1000ms] pointer-events-none">Atlas Analytics Lab</h1>
     </div>
-    <div class="flex flex-col space-y-4">
+    <div class="flex flex-col space-y-4 pointer-events-none">
         <div class="flex justify-center">
-            <a href="https://www.concordia.ca/ginacody/computer-science-software-eng.html">
-            <h1 class="text-white lg:text-2xl 2xl:text-3xl hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">Department of Computer Science and Software Engineering (CSSE)</h1>
+            <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto" href="https://www.concordia.ca/ginacody/computer-science-software-eng.html">
+            <h1 class="text-white md:text-2xl lg:text-2xl 2xl:text-2xl hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">Department of Computer Science and Software Engineering (CSSE)</h1>
             </a>    
         </div>
         <div class="flex justify-center py-1">
-            <a  href="https://www.concordia.ca/ginacody.html">
-            <h1 class="text-white lg:text-2xl 2xl:text-3xl  hover:text-gray-300 font-bold select-none   animate-fade-down animate-duration-[1000ms]">Gina Cody School of Engineering and Computer Science
+            <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto" href="https://www.concordia.ca/ginacody.html">
+            <h1 class="text-white md:text-2xl lg:text-2xl 2xl:text-2xl hover:text-gray-300 font-bold select-none   animate-fade-down animate-duration-[1000ms]">Gina Cody School of Engineering and Computer Science
                 Concordia University
                 </h1>
             </a>
         </div>
         <div class="flex justify-center py-1">
-            <a  href="https://www.google.com/maps/@45.4969907,-73.5785467,3a,75y,303.83h,90t/data=!3m6!1e1!3m4!1sJe60BT428ydncn8k9zav8Q!2e0!7i16384!8i8192?entry=ttu">
-            <h1 class="text-white lg:text-2xl 2xl:text-3xl  hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">1455 De Maisonneuve Blvd. W.
-                Montreal, QC  H3G 1M8 CANADA</h1>
+            <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto"  href="https://www.google.com/maps/place/Concordia+University+Department+of+Computer+Science+and+Software+Engineering/@45.4964196,-73.5799907,15z/data=!4m6!3m5!1s0x4cc91b09f48e4689:0x69537a59a2bba769!8m2!3d45.4964196!4d-73.5799907!16s%2Fg%2F11rcl0fnv2?entry=ttu">
+            <h1 class="text-white md:text-2xl lg:text-2xl 2xl:text-2xl  hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">2155 Guy St, Montreal, Quebec H3H 2L9</h1>
             </a>
         </div>
     </div>

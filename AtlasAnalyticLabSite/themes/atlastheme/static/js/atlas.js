@@ -77,7 +77,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				const parsFragmentString = /* glsl */`#include <bumpmap_pars_fragment>`
 				shader.fragmentShader = shader.fragmentShader.replace(parsFragmentString, parsFragmentString + fragmentPars);
 				shader.fragmentShader = shader.fragmentShader.replace(mainFragmentString, mainFragmentString + fragmentMain);
-				console.log(shader.fragmentShader);
+			
 			}});
 			
 			
@@ -226,12 +226,15 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
+				
+				
+
 
 				
 				
                 
 
-
+				
 				document.body.appendChild( renderer.domElement );
 
                 renderer.domElement.style.position = 'fixed';

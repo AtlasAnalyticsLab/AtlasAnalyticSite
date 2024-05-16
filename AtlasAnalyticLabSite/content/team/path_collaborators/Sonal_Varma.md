@@ -1,7 +1,7 @@
 ---
 weight: 2
 name: Sonal Varma
-photo: Sonal_Varma.jfif
+photo: Sonal_Varma.jpg
 bio: "Sonal Varma, MD, MSc, FRCPC,
 FCAP
 Associate Professor and Chief of Breast Pathology,

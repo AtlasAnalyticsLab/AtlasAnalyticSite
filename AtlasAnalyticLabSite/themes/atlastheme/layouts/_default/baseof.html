@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class = "scroll-smooth" lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html class = "scroll-smooth" lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }} ">
 <script>
   
   document.documentElement.classList.toggle('dark');
@@ -15,27 +15,29 @@
   </header>
   <main class="relative z-30">
    
-    <div id="canvas-container" class="absolute inset-0 flex justify-center items-center pointer-events-none" >
+    <div id="canvas-container" class="absolute inset-0 flex justify-center items-center z-100" >
 </div>
   
 
 
     
     {{ block "main" . }}{{ end }}
+    <footer class="fixed bottom-0 left-0">
+      {{ partial "footer.html" . }}
+      {{ partial "script-footer.html" . }}
+    </footer>
   </main>
-  <footer>
-    {{ partial "footer.html" . }}
-    {{ partial "script-footer.html" . }}
-  </footer>
+
 
 </body>
+
 {{ if not .IsHome }}
 <div id="canvas-container" class="fixed inset-0 bg-atlas opacity-50 flex justify-center items-center z-20 pointer-events-none" >
   <script src="/bundle.js"></script>
 </div>
 {{ end }}
 {{ if .IsHome }}
-<div id="canvas-container" class="fixed flex justify-center items-center z-20 pointer-events-none" >
+<div id="canvas-container" class="fixed flex justify-center items-center z-100 pointer-events-auto" >
   <script src="/bundle.js"></script>
 </div>
 {{ end }}
