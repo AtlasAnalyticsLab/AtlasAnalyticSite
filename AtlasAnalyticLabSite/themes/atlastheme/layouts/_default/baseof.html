@@ -15,7 +15,7 @@
   </header>
   <main class="relative z-30">
    
-    <div id="canvas-container" class="absolute inset-0 flex justify-center items-center z-100" >
+    <div id="canvas-container" class="absolute inset-0 flex justify-center items-center z-100 pointer-events-none" >
 </div>
   
 
@@ -37,7 +37,7 @@
 </div>
 {{ end }}
 {{ if .IsHome }}
-<div id="canvas-container" class="fixed flex justify-center items-center z-100 pointer-events-auto" >
+<div id="canvas-container" class="fixed flex justify-center items-center z-100 pointer-events-none" >
   <script src="/bundle.js"></script>
 </div>
 {{ end }}

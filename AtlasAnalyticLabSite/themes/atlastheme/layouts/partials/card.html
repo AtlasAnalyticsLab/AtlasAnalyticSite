@@ -7,8 +7,7 @@
                     <img class="h-full w-full object-cover group-hover:scale-110 transition-transform" src="{{$path}}/{{ .Params.photo}}" alt="{{ .Params.name}}" >
                     <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70 "></div>
                     <div class="absolute inset-0 flex flex-col items-center justify-center px-4 text-center translate-y-[55.3%] group-hover:translate-y-0 transition-all">
-                        <h1 class="md:text-5xl lg:text-2xl  font-bold text-white">{{ .Params.name }}</h1>
-                        <p class="md:text-2xl  lg:text-sm text-white mb-7 text-center mx-auto w-[100%] h-[13em] overflow-auto overflow-x-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300">{{.Params.bio}}</p>
+                        <p class="md:text-2xl  lg:text-sm text-white mb-7 text-center mx-auto w-[100%] h-[18em] overflow-auto overflow-x-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300">{{.Params.bio}}</p>
                         <div class="absolute bottom-0 left-0 right-0 flex justify-center items-center flex-wrap bg-transparent z-50 p-2 space-x-3">
                         
 
@@ -105,5 +104,8 @@
 
                     </div>
     </div>
+</div>
+<div class="flex flex-col justify-center items-center mt-2">
+<h1 class="md:text-3xl lg:text-2xl text-white">{{ .Params.name }}</h1>
 </div>
 </div>
