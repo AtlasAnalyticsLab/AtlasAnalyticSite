@@ -7,7 +7,7 @@
     {{ $pages := where .Site.Pages "Type" "positions" }}
     {{ range $page := $pages.ByDate.Reverse }}
         {{ if .File }}
-            <div style="pointer-events: auto;">
+            <div class="relative z-100">
                 {{ partial "position_card.html" . }}
             </div>
      

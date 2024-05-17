@@ -10,13 +10,13 @@
 </head>
 <body class="bg-atlas {{ if .IsHome }}overflow-hidden{{ end }}">
 
-  <header class="relative z-30">
+  <header class="relative z-50">
     {{ partial "header.html" . }}
   </header>
   <main class="relative z-30">
-   
-    <div id="canvas-container" class="absolute inset-0 flex justify-center items-center z-100 pointer-events-none" >
-</div>
+
+    <div id="canvas-container" class="absolute  inset-0 flex justify-center items-center z-1" ></div>
+
   
 
 
@@ -31,15 +31,10 @@
 
 </body>
 
-{{ if not .IsHome }}
-<div id="canvas-container" class="fixed inset-0 bg-atlas opacity-50 flex justify-center items-center z-20 pointer-events-none" >
+
+
+<div id="canvas-container" class="fixed flex justify-center items-center z-1" >
   <script src="/bundle.js"></script>
 </div>
-{{ end }}
-{{ if .IsHome }}
-<div id="canvas-container" class="fixed flex justify-center items-center z-100 pointer-events-none" >
-  <script src="/bundle.js"></script>
-</div>
-{{ end }}
 
 </html>

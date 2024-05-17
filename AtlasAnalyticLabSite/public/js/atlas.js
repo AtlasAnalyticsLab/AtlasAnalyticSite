@@ -228,24 +228,38 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				
 				
+				
+				
 
 
 				
-				
-                
+				var container = document.getElementById('canvas-container');
+				container.style.position = 'fixed';
+				container.style.top = '0';
+				container.style.left = '0';
+				container.style.width = '100vw';
+				container.style.height = '100vh';
+				if (window.location.pathname !== '/') {
+					container.style.backgroundColor = '#121212';
+					container.style.opacity = '.4';
+				}
+				console.log(window.getComputedStyle(container).opacity);
+
 
 				
 				document.body.appendChild( renderer.domElement );
-
+				
+				
                 renderer.domElement.style.position = 'fixed';
                 renderer.domElement.style.top = '0';
                 renderer.domElement.style.left = '0';
-                renderer.domElement.style.zIndex = '-1';
+                renderer.domElement.style.zIndex = '1';
+
                 
         //
 		
 		//
-        controls = new OrbitControls( camera, renderer.domElement );
+        controls = new OrbitControls( camera, container );
 				controls.minDistance = 800;
                 controls.autoRotate = true;
                 controls.enableDamping = true;
@@ -254,6 +268,13 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
         
         controls.enableZoom = false;
         controls.enablePan = false;
+
+
+
+
+
+
+		
 
 				//
 
