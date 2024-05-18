@@ -1479,6 +1479,10 @@ video {
     bottom: -15%;
   }
 
+  .lg\:top-1\/2 {
+    top: 50%;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }

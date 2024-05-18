@@ -40,6 +40,7 @@ module.exports = {
     spacing:{
       '19/50': '38%',
       '88': '22rem',
+      '43/100': '43%',
     },
     fontSize: {
       'lgxl': '1.15rem', 
