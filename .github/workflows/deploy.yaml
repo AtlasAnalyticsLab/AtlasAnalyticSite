@@ -40,6 +40,9 @@ jobs:
           hugo-version: '0.125.2'
           # extended: true
 
+      - name: Add execute permissions to Hugo
+        run: chmod +x $(which hugo)
+
       - name: Build
         run: hugo --minify
 
