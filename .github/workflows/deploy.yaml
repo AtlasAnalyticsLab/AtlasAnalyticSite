@@ -25,13 +25,12 @@ jobs:
 
 
       - name: Install dependencies
-        run: |
-          cd AtlasAnalyticLabSite
-          npm ci 
-
+        run: npm ci
+        working-directory: AtlasAnalyticSite
 
       - name: Build with webpack
-        run: npm run build  # Run the build script specified in your package.json
+        run: npm run build
+        working-directory: AtlasAnalyticSite
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
