@@ -36,13 +36,14 @@
     <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-4 2xl:grid-cols-5 gap-6 3xl:grid-cols-5 lg:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">PhD</h2>
     
-    {{ range .Site.Pages }}
-    {{ if .File }}
-        {{ if eq .File.Dir "team\\phd\\" }}
-            {{ partial "card.html" . }}
+        {{ range .Site.Pages }}
+        {{ if .File }}
+            {{ $dir := replace .File.Dir "\\" "/" }}
+            {{ if eq $dir "team/phd/" }}
+                {{ partial "card.html" . }}
+            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
     </div>
 </div>
 
@@ -54,13 +55,14 @@
     <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-4 2xl:grid-cols-5 gap-6 3xl:grid-cols-5 lg:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">MsC</h2>
     
-    {{ range .Site.Pages }}
-    {{ if .File }}
-        {{ if eq .File.Dir "team\\masters\\" }}
-            {{ partial "card.html" . }}
+        {{ range .Site.Pages }}
+        {{ if .File }}
+            {{ $dir := replace .File.Dir "\\" "/" }}
+            {{ if eq $dir "team/masters/" }}
+                {{ partial "card.html" . }}
+            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
     </div>
 </div>
 
@@ -71,13 +73,14 @@
     <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-4 2xl:grid-cols-5 gap-6 3xl:grid-cols-5 lg:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">UG</h2>
     
-    {{ range .Site.Pages }}
-    {{ if .File }}
-        {{ if eq .File.Dir "team\\undergraduate\\" }}
-            {{ partial "card.html" . }}
+        {{ range .Site.Pages }}
+        {{ if .File }}
+            {{ $dir := replace .File.Dir "\\" "/" }}
+            {{ if eq $dir "team/undergraduate/" }}
+                {{ partial "card.html" . }}
+            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
     </div>
 </div>
 
@@ -88,13 +91,14 @@
     <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-4 2xl:grid-cols-5 gap-6 3xl:grid-cols-5 lg:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">Student Collaborators</h2>
     
-    {{ range .Site.Pages }}
-    {{ if .File }}
-        {{ if eq .File.Dir "team\\student_collaborators\\" }}
-            {{ partial "card.html" . }}
+        {{ range .Site.Pages }}
+        {{ if .File }}
+            {{ $dir := replace .File.Dir "\\" "/" }}
+            {{ if eq $dir "team/student_collaborators/" }}
+                {{ partial "card.html" . }}
+            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
     </div>
 </div>
 
@@ -106,13 +110,14 @@
     <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-4 2xl:grid-cols-5 gap-6 3xl:grid-cols-5 lg:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">PI Collaborators (Pathologist)</h2>
     
-    {{ range .Site.Pages }}
-    {{ if .File }}
-        {{ if eq .File.Dir "team\\path_collaborators\\" }}
-            {{ partial "card.html" . }}
+        {{ range .Site.Pages }}
+        {{ if .File }}
+            {{ $dir := replace .File.Dir "\\" "/" }}
+            {{ if eq $dir "team/path_collaborators/" }}
+                {{ partial "card.html" . }}
+            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
     </div>
 </div>
 <div class = "flex flex-col items-center w-auto animate-fade animate-duration-[1500ms] md: min-h-full">
@@ -122,13 +127,14 @@
     <div class="grid grid-cols-1 md:flex-grow md:mx-auto  md:grid-cols-1 lg:grid-cols-4 2xl:grid-cols-5 gap-6 3xl:grid-cols-5 lg:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">PI Collaborators (Engineering and Computer Science)</h2>
     
-    {{ range .Site.Pages }}
-    {{ if .File }}
-        {{ if eq .File.Dir "team\\eng_comp_collaborators\\" }}
-            {{ partial "card.html" . }}
+        {{ range .Site.Pages }}
+        {{ if .File }}
+            {{ $dir := replace .File.Dir "\\" "/" }}
+            {{ if eq $dir "team/eng_comp_cp;;aborators/" }}
+                {{ partial "card.html" . }}
+            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
     </div>
 </div>
 
@@ -161,13 +167,13 @@
     </div>
     <div class="flex flex-row justify-center mt-4 space-x-4 relative z-100">
         <a href="https://www.iricor.ca/" target="_blank">
-            <img class="h-24 w-full object-contain group-hover:scale-110 transition-transform mt-10 hover:shadow-2xl hover:opacity-60" src="{{$path}}/iricor.png">
+            <img class="h-24 w-full object-contain group-hover:scale-110 transition-transform mt-10 hover:shadow-2xl hover:opacity-60" src="{{$path}}/IRICoR.png">
         </a>
         <a href="https://alliancecan.ca/en" target="_blank">
             <img class="h-24 w-full object-contain group-hover:scale-110 transition-transform mt-10 hover:shadow-2xl hover:opacity-60" src="{{$path}}/digital_alliance.png">
         </a>
         <a href="https://www.concordia.ca/ginacody.html" target="_blank">
-            <img class="h-24 w-full object-contain group-hover:scale-110 transition-transform mt-10 hover:shadow-2xl hover:opacity-60" src="{{$path}}/gcsdark.png">
+            <img class="h-24 w-full object-contain group-hover:scale-110 transition-transform mt-10 hover:shadow-2xl hover:opacity-60" src="{{$path}}/gcsdark.PNG">
         </a>
     </div>
      
