@@ -52,7 +52,7 @@ jobs:
       - name: Install Node.js dependencies
         run: |
           cd AtlasAnalyticLabSite
-          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true
+          [[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci && npm run webpack || true
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules

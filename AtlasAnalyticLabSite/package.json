@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "webpack serve --watch --mode development",
+    "webpack": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "npm-check": "npm-check -u",
     "dev": "hugo server --gc --disableFastRender",
