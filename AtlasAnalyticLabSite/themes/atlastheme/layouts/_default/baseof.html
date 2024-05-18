@@ -8,12 +8,12 @@
   <link rel="stylesheet" href="/main.css">
   {{ partial "head.html" . }}
 </head>
-<body class="bg-atlas {{ if .IsHome }}overflow-hidden{{ end }}">
+<body class="bg-atlas  flex flex-col min-h-screen">
 
   <header class="relative z-50">
     {{ partial "header.html" . }}
   </header>
-  <main class="relative z-30">
+  <main class="relative z-30 flex-grow">
 
     <div id="canvas-container" class="absolute  inset-0 flex justify-center items-center z-1" ></div>
 
@@ -22,7 +22,7 @@
 
     
     {{ block "main" . }}{{ end }}
-    <footer class="fixed bottom-0 left-0">
+    <footer class="absolute bottom-[-15%] left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       {{ partial "footer.html" . }}
       {{ partial "script-footer.html" . }}
     </footer>

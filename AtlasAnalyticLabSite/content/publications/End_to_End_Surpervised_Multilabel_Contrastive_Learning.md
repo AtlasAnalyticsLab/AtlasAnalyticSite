@@ -6,6 +6,6 @@ date: 2023-06-08
 publisher: Arxiv
 source: arXiv 2023
 github: https://github.com/mahdihosseini/KMCL
-link: https://arxiv.org/abs/2307.03967
+link: https://arxiv.org/pdf/2307.03967
 arxiv: https://arxiv.org/abs/2307.03967
 ---

@@ -16,6 +16,10 @@ menus:
   - name: Team
     pageref: /team
     weight: 30
+  
+  - name: Projects
+    pageref: /projects
+    weight: 34
 
   - name: Software
     pageref: https://github.com/AtlasAnalyticsLab
