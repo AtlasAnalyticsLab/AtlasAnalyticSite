@@ -1,7 +1,0 @@
----
-weight: 1
-name: Vicent Quoc-Huy Trinh
-photo: quoc-huy-vincent-trinh.jpeg
-bio: Until very recently, Dr. Q. Trinh held the position of Surgery Research Instructor in the Department of Surgery of the Vanderbilt University Medical Center, in Nashville, Tennessee. He received his medical degree from the UdeM in 2014, then completed a Master’s in Biomedical Sciences (CRCHUM) and his residency in Anatomic Pathology at the UdeM in 2019. Subsequently, as a Fellow of the McLaughlin Foundation, he completed a clinical specialization in gastrointestinal and liver pathology at Vanderbilt (2019-2020), before being named as a Research Instructor at that same institution. Dr. Q. Trinh’s main research interest involves the role played by fibroblasts and stellate cells in the tumor microenvironment of pancreatic cancer precursor cells. The study of progenitor cell populations during oncogenesis in other types of cancers will also be at the heart of his research program. By combining cutting-edge approaches in digital morphometrics, multiplex immunohistochemistry/immunofluorescence and single cell sequencing techniques, he will aim to redefine the diagnostic approach in pathology to help prevent tumor progression by specifically targeting those well-defined cell populations.
-website: https://www.chumontreal.qc.ca/en/crchum/chercheurs/quoc-huy-vincent-trinh
----
