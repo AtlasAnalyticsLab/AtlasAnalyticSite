@@ -32,11 +32,6 @@ jobs:
           cd AtlasAnalyticLabSite
           npm install
 
-      - name: Build with webpack
-        run: |
-          cd AtlasAnalyticLabSite
-          npm run serve
-
       - name: Build with Hugo
         run: |
           cd AtlasAnalyticLabSite
