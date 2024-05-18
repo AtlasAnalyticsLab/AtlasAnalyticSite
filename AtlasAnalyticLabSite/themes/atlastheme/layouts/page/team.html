@@ -16,7 +16,7 @@
     
         {{ range .Site.Pages }}
         {{ if .File }}
-            {{ $dir := .File.Dir | filepath.ToSlash }}
+            {{ $dir := replace .File.Dir "\\" "/" }}
             {{ if eq $dir "team/director/" }}
                 {{ partial "card.html" . }}
             {{ end }}
