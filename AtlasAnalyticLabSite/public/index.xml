@@ -2,318 +2,318 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>= Home on Atlas Analytic Lab</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:49220/</link>
     <description>Recent content in = Home on Atlas Analytic Lab</description>
     <generator>Hugo 0.125.2</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 May 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:49220/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/team/director/mahdi_s_hosseini/</link>
+      <link>http://localhost:49220/team/director/mahdi_s_hosseini/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/director/mahdi_s_hosseini/</guid>
+      <guid>http://localhost:49220/team/director/mahdi_s_hosseini/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/masters/densiha_thakkar/</link>
+      <link>http://localhost:49220/team/masters/densiha_thakkar/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/masters/densiha_thakkar/</guid>
+      <guid>http://localhost:49220/team/masters/densiha_thakkar/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/path_collaborators/vincent_trihn/</link>
+      <link>http://localhost:49220/team/path_collaborators/vincent_trihn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/path_collaborators/vincent_trihn/</guid>
+      <guid>http://localhost:49220/team/path_collaborators/vincent_trihn/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/phd/joe_yang/</link>
+      <link>http://localhost:49220/team/phd/joe_yang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/phd/joe_yang/</guid>
+      <guid>http://localhost:49220/team/phd/joe_yang/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/student_collaborators/yanlei_zhang/</link>
+      <link>http://localhost:49220/team/student_collaborators/yanlei_zhang/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/student_collaborators/yanlei_zhang/</guid>
+      <guid>http://localhost:49220/team/student_collaborators/yanlei_zhang/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/masters/cassandre_notton/</link>
+      <link>http://localhost:49220/team/masters/cassandre_notton/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/masters/cassandre_notton/</guid>
+      <guid>http://localhost:49220/team/masters/cassandre_notton/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/path_collaborators/sonal_varma/</link>
+      <link>http://localhost:49220/team/path_collaborators/sonal_varma/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/path_collaborators/sonal_varma/</guid>
+      <guid>http://localhost:49220/team/path_collaborators/sonal_varma/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/student_collaborators/anh_tien_nguyen/</link>
+      <link>http://localhost:49220/team/student_collaborators/anh_tien_nguyen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/student_collaborators/anh_tien_nguyen/</guid>
+      <guid>http://localhost:49220/team/student_collaborators/anh_tien_nguyen/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/eng_comp_collaborators/dimitri_samaras/</link>
+      <link>http://localhost:49220/team/eng_comp_collaborators/dimitri_samaras/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/eng_comp_collaborators/dimitri_samaras/</guid>
+      <guid>http://localhost:49220/team/eng_comp_collaborators/dimitri_samaras/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/eng_comp_collaborators/guy_wolf/</link>
+      <link>http://localhost:49220/team/eng_comp_collaborators/guy_wolf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/eng_comp_collaborators/guy_wolf/</guid>
+      <guid>http://localhost:49220/team/eng_comp_collaborators/guy_wolf/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/masters/damien_martins_gomes/</link>
+      <link>http://localhost:49220/team/masters/damien_martins_gomes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/masters/damien_martins_gomes/</guid>
+      <guid>http://localhost:49220/team/masters/damien_martins_gomes/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/path_collaborators/lina_chen/</link>
+      <link>http://localhost:49220/team/path_collaborators/lina_chen/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/path_collaborators/lina_chen/</guid>
+      <guid>http://localhost:49220/team/path_collaborators/lina_chen/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/student_collaborators/kai_li/</link>
+      <link>http://localhost:49220/team/student_collaborators/kai_li/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/student_collaborators/kai_li/</guid>
+      <guid>http://localhost:49220/team/student_collaborators/kai_li/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/undergraduate/hailey_thao_quach/</link>
+      <link>http://localhost:49220/team/undergraduate/hailey_thao_quach/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/undergraduate/hailey_thao_quach/</guid>
+      <guid>http://localhost:49220/team/undergraduate/hailey_thao_quach/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/eng_comp_collaborators/samira_ebrahimi_kahou/</link>
+      <link>http://localhost:49220/team/eng_comp_collaborators/samira_ebrahimi_kahou/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/eng_comp_collaborators/samira_ebrahimi_kahou/</guid>
+      <guid>http://localhost:49220/team/eng_comp_collaborators/samira_ebrahimi_kahou/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/masters/ali_nasiri_sarvi/</link>
+      <link>http://localhost:49220/team/masters/ali_nasiri_sarvi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/masters/ali_nasiri_sarvi/</guid>
+      <guid>http://localhost:49220/team/masters/ali_nasiri_sarvi/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/student_collaborators/aoqi_long/</link>
+      <link>http://localhost:49220/team/student_collaborators/aoqi_long/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/student_collaborators/aoqi_long/</guid>
+      <guid>http://localhost:49220/team/student_collaborators/aoqi_long/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/undergraduate/david_ballard/</link>
+      <link>http://localhost:49220/team/undergraduate/david_ballard/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/undergraduate/david_ballard/</guid>
+      <guid>http://localhost:49220/team/undergraduate/david_ballard/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/eng_comp_collaborators/christopher_j_pal/</link>
+      <link>http://localhost:49220/team/eng_comp_collaborators/christopher_j_pal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/eng_comp_collaborators/christopher_j_pal/</guid>
+      <guid>http://localhost:49220/team/eng_comp_collaborators/christopher_j_pal/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/masters/vasudev_sharma/</link>
+      <link>http://localhost:49220/team/masters/vasudev_sharma/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/masters/vasudev_sharma/</guid>
+      <guid>http://localhost:49220/team/masters/vasudev_sharma/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/masters/haoyu_he/</link>
+      <link>http://localhost:49220/team/masters/haoyu_he/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/masters/haoyu_he/</guid>
+      <guid>http://localhost:49220/team/masters/haoyu_he/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/team/masters/sina_maghsoudlou/</link>
+      <link>http://localhost:49220/team/masters/sina_maghsoudlou/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/masters/sina_maghsoudlou/</guid>
+      <guid>http://localhost:49220/team/masters/sina_maghsoudlou/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/news/frqnt/</link>
+      <link>http://localhost:49220/news/frqnt/</link>
       <pubDate>Mon, 06 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/frqnt/</guid>
+      <guid>http://localhost:49220/news/frqnt/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/news/neurips/</link>
+      <link>http://localhost:49220/news/neurips/</link>
       <pubDate>Wed, 01 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/neurips/</guid>
+      <guid>http://localhost:49220/news/neurips/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/news/vim4path/</link>
+      <link>http://localhost:49220/news/vim4path/</link>
       <pubDate>Sun, 28 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/vim4path/</guid>
+      <guid>http://localhost:49220/news/vim4path/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/publications/vim4path_self-supervised_vision_mamba_for_histopathology_images/</link>
+      <link>http://localhost:49220/publications/vim4path_self-supervised_vision_mamba_for_histopathology_images/</link>
       <pubDate>Mon, 22 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/vim4path_self-supervised_vision_mamba_for_histopathology_images/</guid>
+      <guid>http://localhost:49220/publications/vim4path_self-supervised_vision_mamba_for_histopathology_images/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/news/amazon/</link>
+      <link>http://localhost:49220/news/amazon/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/amazon/</guid>
+      <guid>http://localhost:49220/news/amazon/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/news/eccv/</link>
+      <link>http://localhost:49220/news/eccv/</link>
       <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/eccv/</guid>
+      <guid>http://localhost:49220/news/eccv/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/positions/deep_learning_research_in_vision-language_modeling_for_computational_pathology/</link>
+      <link>http://localhost:49220/positions/deep_learning_research_in_vision-language_modeling_for_computational_pathology/</link>
       <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/positions/deep_learning_research_in_vision-language_modeling_for_computational_pathology/</guid>
+      <guid>http://localhost:49220/positions/deep_learning_research_in_vision-language_modeling_for_computational_pathology/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/publications/computational_pathology_a_survey_review_and_the_way_fordward/</link>
+      <link>http://localhost:49220/publications/computational_pathology_a_survey_review_and_the_way_fordward/</link>
       <pubDate>Sun, 14 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/computational_pathology_a_survey_review_and_the_way_fordward/</guid>
+      <guid>http://localhost:49220/publications/computational_pathology_a_survey_review_and_the_way_fordward/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/news/cvpr/</link>
+      <link>http://localhost:49220/news/cvpr/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/cvpr/</guid>
+      <guid>http://localhost:49220/news/cvpr/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/publications/end_to_end_surpervised_multilabel_contrastive_learning/</link>
+      <link>http://localhost:49220/publications/end_to_end_surpervised_multilabel_contrastive_learning/</link>
       <pubDate>Thu, 08 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/end_to_end_surpervised_multilabel_contrastive_learning/</guid>
+      <guid>http://localhost:49220/publications/end_to_end_surpervised_multilabel_contrastive_learning/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/publications/pseudo_inverted_bottleneck_convolution_for_darts_search_space/</link>
+      <link>http://localhost:49220/publications/pseudo_inverted_bottleneck_convolution_for_darts_search_space/</link>
       <pubDate>Sun, 19 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/pseudo_inverted_bottleneck_convolution_for_darts_search_space/</guid>
+      <guid>http://localhost:49220/publications/pseudo_inverted_bottleneck_convolution_for_darts_search_space/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/publications/exploiting_explainable_metrics_for_augmented_sgd/</link>
+      <link>http://localhost:49220/publications/exploiting_explainable_metrics_for_augmented_sgd/</link>
       <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/exploiting_explainable_metrics_for_augmented_sgd/</guid>
+      <guid>http://localhost:49220/publications/exploiting_explainable_metrics_for_augmented_sgd/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/publications/histokt_cross_kowledge_transfer_in_computational_pathology/</link>
+      <link>http://localhost:49220/publications/histokt_cross_kowledge_transfer_in_computational_pathology/</link>
       <pubDate>Fri, 28 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/histokt_cross_kowledge_transfer_in_computational_pathology/</guid>
+      <guid>http://localhost:49220/publications/histokt_cross_kowledge_transfer_in_computational_pathology/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/publications/towards_robust_and_automatic_hyper_parameter_tuning/</link>
+      <link>http://localhost:49220/publications/towards_robust_and_automatic_hyper_parameter_tuning/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/towards_robust_and_automatic_hyper_parameter_tuning/</guid>
+      <guid>http://localhost:49220/publications/towards_robust_and_automatic_hyper_parameter_tuning/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;About&#34;</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:49220/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:49220/about/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;Contact&#34;</title>
-      <link>http://localhost:1313/contact/</link>
+      <link>http://localhost:49220/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/contact/</guid>
+      <guid>http://localhost:49220/contact/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;Join us&#34;</title>
-      <link>http://localhost:1313/positions/</link>
+      <link>http://localhost:49220/positions/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/positions/</guid>
+      <guid>http://localhost:49220/positions/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;News&#34;</title>
-      <link>http://localhost:1313/news/</link>
+      <link>http://localhost:49220/news/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/news/</guid>
+      <guid>http://localhost:49220/news/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;Photos&#34;</title>
-      <link>http://localhost:1313/photos/</link>
+      <link>http://localhost:49220/photos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/photos/</guid>
+      <guid>http://localhost:49220/photos/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;projects&#34;</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>http://localhost:49220/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>http://localhost:49220/projects/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;Publications&#34;</title>
-      <link>http://localhost:1313/publications/</link>
+      <link>http://localhost:49220/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publications/</guid>
+      <guid>http://localhost:49220/publications/</guid>
       <description></description>
     </item>
     <item>
       <title>= &#34;Team&#34;</title>
-      <link>http://localhost:1313/team/</link>
+      <link>http://localhost:49220/team/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/team/</guid>
+      <guid>http://localhost:49220/team/</guid>
       <description></description>
     </item>
   </channel>
