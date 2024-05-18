@@ -15,10 +15,10 @@ module.exports = {
       'mdlg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      'lg': '2400px',
+      'lg': '1700px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '3000px',
+      '2xl': '2200px',
     },
     
     extend: {      fontSize: {
