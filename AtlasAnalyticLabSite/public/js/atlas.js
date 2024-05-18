@@ -148,7 +148,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 		
 				
-                const helper = new THREE.Mesh(new THREE.IcosahedronGeometry(450, 8), shadermaterial);
+                const helper = new THREE.Mesh(new THREE.IcosahedronGeometry(450, 6), shadermaterial);
 
 
                 group.add(helper);
