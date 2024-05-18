@@ -1265,6 +1265,10 @@ video {
     bottom: 5%;
   }
 
+  .md\:top-19\/50 {
+    top: 38%;
+  }
+
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
   }
