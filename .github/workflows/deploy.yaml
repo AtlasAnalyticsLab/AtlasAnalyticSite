@@ -69,8 +69,9 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
-
+          path: AtlasAnalyticLabSite/public
+          name: github-pages
+          retention-days: 1
   # Deployment job
   deploy:
     environment:
