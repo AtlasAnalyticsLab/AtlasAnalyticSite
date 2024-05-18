@@ -1,4 +1,4 @@
-baseURL: https://atlasanalyticslab.github.io/atlasanalyticsite/
+baseURL: "https://atlasanalyticslab.ai/"
 languageCode: en-us
 title: Atlas Analytic Lab
 theme: ["atlastheme"]
