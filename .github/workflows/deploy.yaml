@@ -50,6 +50,7 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: |
+            cd AtlasAnalyticLabSite
             npm install
       - name: Build with Hugo
         env:
