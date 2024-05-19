@@ -7,13 +7,14 @@ module.exports = {
   theme: {
     screens: {
 
+
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
-      'lg': '800px',
+      'lg': '1000px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1400px',
+      '2xl': '3000px',
     },
     
     extend: {      fontSize: {
