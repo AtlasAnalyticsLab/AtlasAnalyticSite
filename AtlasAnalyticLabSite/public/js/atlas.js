@@ -59,26 +59,30 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 			
 
 
-			const shadermaterial = new THREE.MeshStandardMaterial({map: texture, 
-			onBeforeCompile: (shader) => {
-					
-				shadermaterial.userData.shader = shader;
-				shader.uniforms.uTime = { value: 0.0 };
-				const parseVertexString = /* glsl */`#include <displacementmap_pars_vertex>`
-				shader.vertexShader = shader.vertexShader.replace(parseVertexString, 
-					parseVertexString + vertexShaderParse
-				
-				);
-
-				const mainVertexString = /* glsl */`#include <displacementmap_vertex>`
-				shader.vertexShader = shader.vertexShader.replace(mainVertexString, mainVertexString + vertexShaderMain);
-				
-				const mainFragmentString = /* glsl */`#include <normal_fragment_maps>`
-				const parsFragmentString = /* glsl */`#include <bumpmap_pars_fragment>`
-				shader.fragmentShader = shader.fragmentShader.replace(parsFragmentString, parsFragmentString + fragmentPars);
-				shader.fragmentShader = shader.fragmentShader.replace(mainFragmentString, mainFragmentString + fragmentMain);
+			const shadermaterial = new THREE.MeshStandardMaterial({map: texture});
 			
-			}});
+			
+			
+			//new THREE.MeshStandardMaterial({map: texture, 
+			//onBeforeCompile: (shader) => {
+					
+			//	shadermaterial.userData.shader = shader;
+			//	shader.uniforms.uTime = { value: 0.0 };
+			//	const parseVertexString = /* glsl */`#include <displacementmap_pars_vertex>`
+			///	shader.vertexShader = shader.vertexShader.replace(parseVertexString, 
+				//	parseVertexString + vertexShaderParse
+				
+			//	);
+
+			//	const mainVertexString = /* glsl */`#include <displacementmap_vertex>`
+			//	shader.vertexShader = shader.vertexShader.replace(mainVertexString, mainVertexString + vertexShaderMain);
+				
+			//	const mainFragmentString = /* glsl */`#include <normal_fragment_maps>`
+			//	const parsFragmentString = /* glsl */`#include <bumpmap_pars_fragment>`
+			//	shader.fragmentShader = shader.fragmentShader.replace(parsFragmentString, parsFragmentString + fragmentPars);
+			//	shader.fragmentShader = shader.fragmentShader.replace(mainFragmentString, mainFragmentString + fragmentMain);
+			
+		//	}});
 			
 			
 			init();
