@@ -1078,30 +1078,30 @@ video {
 .animate-duration-\[1500ms\] {
   animation-duration: 1500ms;
 }
-@media (min-width: 100px) {
+@media (min-width: 768px) {
 
   .md\:container {
     width: 100%;
   }
 
-  @media (min-width: px) {
+  @media (min-width: 640px) {
 
     .md\:container {
-      max-width: px;
+      max-width: 640px;
     }
   }
 
-  @media (min-width: 100px) {
+  @media (min-width: 768px) {
 
     .md\:container {
-      max-width: 100px;
+      max-width: 768px;
     }
   }
 
-  @media (min-width: 600px) {
+  @media (min-width: 1700px) {
 
     .md\:container {
-      max-width: 600px;
+      max-width: 1700px;
     }
   }
 
@@ -1248,7 +1248,7 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
 }
-@media (min-width: 100px) {
+@media (min-width: 768px) {
 
   .md\:pointer-events-auto {
     pointer-events: auto;
@@ -1462,7 +1462,7 @@ video {
     color: rgb(209 213 219 / var(--tw-text-opacity));
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 1700px) {
 
   .lg\:pointer-events-none {
     pointer-events: none;
@@ -1655,7 +1655,7 @@ video {
 .\[\&\>svg\]\:w-4>svg {
   width: 1rem;
 }
-@media (min-width: 100px) {
+@media (min-width: 768px) {
 
   .\[\&\>svg\]\:md\:h-8>svg {
     height: 2rem;
@@ -1665,7 +1665,7 @@ video {
     width: 2rem;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 1700px) {
 
   .\[\&\>svg\]\:lg\:h-4>svg {
     height: 1rem;
