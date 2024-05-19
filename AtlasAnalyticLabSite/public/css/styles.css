@@ -1087,13 +1087,6 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
-
-    .md\:container {
-      max-width: 640px;
-    }
-  }
-
   @media (min-width: 768px) {
 
     .md\:container {
@@ -1101,17 +1094,17 @@ video {
     }
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 800px) {
 
     .md\:container {
-      max-width: 1000px;
+      max-width: 800px;
     }
   }
 
-  @media (min-width: 3000px) {
+  @media (min-width: 1400px) {
 
     .md\:container {
-      max-width: 3000px;
+      max-width: 1400px;
     }
   }
 }
@@ -1469,7 +1462,7 @@ video {
     color: rgb(209 213 219 / var(--tw-text-opacity));
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
   .lg\:pointer-events-none {
     pointer-events: none;
@@ -1549,8 +1542,8 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:justify-between {
@@ -1616,7 +1609,7 @@ video {
     line-height: 1.75rem;
   }
 }
-@media (min-width: 3000px) {
+@media (min-width: 1400px) {
 
   .\32xl\:bottom-\[-12\%\] {
     bottom: -12%;
@@ -1681,7 +1674,7 @@ video {
     width: 2rem;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
 
   .\[\&\>svg\]\:lg\:h-4>svg {
     height: 1rem;
