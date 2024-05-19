@@ -1105,10 +1105,10 @@ video {
     }
   }
 
-  @media (min-width: 2200px) {
+  @media (min-width: 3000px) {
 
     .md\:container {
-      max-width: 2200px;
+      max-width: 3000px;
     }
   }
 }
@@ -1332,6 +1332,10 @@ video {
     width: 800px;
   }
 
+  .md\:w-\[80px\] {
+    width: 80px;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -1468,8 +1472,8 @@ video {
     pointer-events: none;
   }
 
-  .lg\:bottom-\[-15\%\] {
-    bottom: -15%;
+  .lg\:bottom-\[-5\%\] {
+    bottom: -5%;
   }
 
   .lg\:top-43\/100 {
@@ -1609,7 +1613,7 @@ video {
     line-height: 1.75rem;
   }
 }
-@media (min-width: 2200px) {
+@media (min-width: 3000px) {
 
   .\32xl\:bottom-\[-20\%\] {
     bottom: -20%;

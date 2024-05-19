@@ -15,7 +15,7 @@ module.exports = {
       'lg': '1000px',
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '2200px',
+      '2xl': '3000px',
     },
     
     extend: {      fontSize: {
