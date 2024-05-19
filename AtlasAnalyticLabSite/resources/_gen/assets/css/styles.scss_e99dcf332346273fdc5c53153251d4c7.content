@@ -1078,37 +1078,30 @@ video {
 .animate-duration-\[1500ms\] {
   animation-duration: 1500ms;
 }
-@media (min-width: 768px) {
+@media (min-width: 100px) {
 
   .md\:container {
     width: 100%;
   }
 
-  @media (min-width: 640px) {
+  @media (min-width: px) {
 
     .md\:container {
-      max-width: 640px;
+      max-width: px;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 100px) {
 
     .md\:container {
-      max-width: 768px;
+      max-width: 100px;
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 600px) {
 
     .md\:container {
-      max-width: 1024px;
-    }
-  }
-
-  @media (min-width: 1700px) {
-
-    .md\:container {
-      max-width: 1700px;
+      max-width: 600px;
     }
   }
 
@@ -1255,7 +1248,7 @@ video {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(75 85 99 / var(--tw-ring-opacity));
 }
-@media (min-width: 768px) {
+@media (min-width: 100px) {
 
   .md\:pointer-events-auto {
     pointer-events: auto;
@@ -1469,7 +1462,7 @@ video {
     color: rgb(209 213 219 / var(--tw-text-opacity));
   }
 }
-@media (min-width: 1700px) {
+@media (min-width: 600px) {
 
   .lg\:pointer-events-none {
     pointer-events: none;
@@ -1479,8 +1472,8 @@ video {
     bottom: -15%;
   }
 
-  .lg\:top-1\/2 {
-    top: 50%;
+  .lg\:top-43\/100 {
+    top: 43%;
   }
 
   .lg\:col-span-1 {
@@ -1662,7 +1655,7 @@ video {
 .\[\&\>svg\]\:w-4>svg {
   width: 1rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 100px) {
 
   .\[\&\>svg\]\:md\:h-8>svg {
     height: 2rem;
@@ -1672,7 +1665,7 @@ video {
     width: 2rem;
   }
 }
-@media (min-width: 1700px) {
+@media (min-width: 600px) {
 
   .\[\&\>svg\]\:lg\:h-4>svg {
     height: 1rem;

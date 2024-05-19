@@ -6,16 +6,13 @@ module.exports = {
   darkMode: 'class',
   theme: {
     screens: {
-      'sm': '640px',
+      'sm': 'px',
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      'md': '100px',
       // => @media (min-width: 768px) { ... }
 
-      'mdlg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
-      'lg': '1700px',
+      'lg': '600px',
       // => @media (min-width: 1280px) { ... }
 
       '2xl': '2200px',
