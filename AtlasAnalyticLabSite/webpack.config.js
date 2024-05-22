@@ -1,8 +1,18 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: './themes/atlastheme/static/js/atlas.js',
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        parallel: true,
+        terserOptions: {
+          // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
+        },
+      }),
+    ],
+  },
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
