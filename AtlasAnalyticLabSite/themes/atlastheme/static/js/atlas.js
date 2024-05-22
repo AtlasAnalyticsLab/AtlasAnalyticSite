@@ -31,7 +31,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
       let lc = new THREE.Color("#ffffff");
 
 			const maxParticleCount = 2000;
-			let particleCount = 50;
+			let particleCount = 550;
 			const r = 800;
 			const rHalf = r / 2;
       let v3 = new THREE.Vector3();
