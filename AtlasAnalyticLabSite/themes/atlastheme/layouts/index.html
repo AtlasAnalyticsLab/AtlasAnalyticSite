@@ -1,38 +1,36 @@
 
 {{ define "main" }}
 
+<div class="min-h-screen flex flex-col justify-between items-center relative">
+    <h1 class="text-white text-center md:text-8xl lg:text-7xl 2xl:text-10xl font-bold select-none animate-fade-down animate-duration-[1000ms] pointer-events-none">Atlas Analytics Lab</h1>
 
     
-<main class="flex flex-col justify-center items-center h-screen  z-40 pointer-events-none">
-    <div id="sphere-container" class="z-100"></div>
-    
-    <div class="absolute md:top-19/50 lg:top-43/100 left-1/2 w-full lg:w-auto transform -translate-x-1/2 -translate-y-1/2 pointer-events-none lg:ml-2">
-        <h1 class="text-white text-center md:text-8xl lg:text-7xl 2xl:text-10xl font-bold select-none animate-fade-down animate-duration-[1000ms] pointer-events-none">Atlas Analytics Lab</h1>
+
+    <div class="fixed bottom-40 left-0 w-full">
+        <h1 class="text-white md:text-2xl lg:text-xl 2xl:text-2xl hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">Welcome to the forefront of innovation at the Atlas Analytics Lab, nestled within the vibrant community of CSSE@Concordia Univeristy in Montreal and guided by the visionary leadership of Professor Mahdi S. Hosseini. Despite our recent inception, we've rapidly blossomed into a powerhouse of talent, driven by our unwavering commitment to pushing the boundaries of AI and deep learning for healthcare applications in clinical pathology.</h1>   
     </div>
-    <div class="md:w-full lg:w-auto absolute  md:bottom-[5%] lg:bottom-[-15%] 2xl:bottom-[-15%] left-1/2 transform -translate-x-1/2 pointer-events-auto">
-        <div class="flex flex-col justify-center items-center text-center ">
-            <h1 class="text-white md:text-2xl lg:text-xl 2xl:text-2xl hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">Welcome to the forefront of innovation at the Atlas Analytics Lab, nestled within the vibrant community of CSSE@Concordia Univeristy in Montreal and guided by the visionary leadership of Professor Mahdi S. Hosseini. Despite our recent inception, we've rapidly blossomed into a powerhouse of talent, driven by our unwavering commitment to pushing the boundaries of AI and deep learning for healthcare applications in clinical pathology.</h1>   
-        </div>
+  </div>
+  
+  <div class="flex flex-col md:pointer-events-auto lg:pointer-events-none mt-16 pb-32">
+    <div class="flex justify-center">
+        <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto" href="https://www.concordia.ca/ginacody/computer-science-software-eng.html">
+        <h1 class="text-white md:text-2xl lg:text-xl xl:text-2xl hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">Department of Computer Science and Software Engineering (CSSE)</h1>
+        </a>    
+    </div>
+    <div class="flex justify-center">
+        <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto" href="https://www.concordia.ca/ginacody.html">
+        <h1 class="text-white md:text-2xl lg:text-xl xl:text-2xl hover:text-gray-300 font-bold select-none   animate-fade-down animate-duration-[1000ms]">Gina Cody School of Engineering and Computer Science
+            Concordia University
+            </h1>
+        </a>
+    </div>
+    <div class="flex justify-center ">
+        <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto"  href="https://www.google.com/maps/place/Concordia+University+Department+of+Computer+Science+and+Software+Engineering/@45.4964196,-73.5799907,15z/data=!4m6!3m5!1s0x4cc91b09f48e4689:0x69537a59a2bba769!8m2!3d45.4964196!4d-73.5799907!16s%2Fg%2F11rcl0fnv2?entry=ttu">
+        <h1 class="text-white md:text-2xl lg:text-xl xl:text-2xl  hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">2155 Guy St, Montreal, Quebec H3H 2L9</h1>
+        </a>
+    </div>
+</div>
 
 
-    <div class="flex flex-col md:pointer-events-auto lg:pointer-events-none mt-16 pb-32">
-        <div class="flex justify-center">
-            <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto" href="https://www.concordia.ca/ginacody/computer-science-software-eng.html">
-            <h1 class="text-white md:text-2xl lg:text-xl xl:text-2xl hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">Department of Computer Science and Software Engineering (CSSE)</h1>
-            </a>    
-        </div>
-        <div class="flex justify-center">
-            <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto" href="https://www.concordia.ca/ginacody.html">
-            <h1 class="text-white md:text-2xl lg:text-xl xl:text-2xl hover:text-gray-300 font-bold select-none   animate-fade-down animate-duration-[1000ms]">Gina Cody School of Engineering and Computer Science
-                Concordia University
-                </h1>
-            </a>
-        </div>
-        <div class="flex justify-center ">
-            <a class="transition transform duration-150 hover:scale-101.5 pointer-events-auto"  href="https://www.google.com/maps/place/Concordia+University+Department+of+Computer+Science+and+Software+Engineering/@45.4964196,-73.5799907,15z/data=!4m6!3m5!1s0x4cc91b09f48e4689:0x69537a59a2bba769!8m2!3d45.4964196!4d-73.5799907!16s%2Fg%2F11rcl0fnv2?entry=ttu">
-            <h1 class="text-white md:text-2xl lg:text-xl xl:text-2xl  hover:text-gray-300 font-bold select-none  animate-fade-down animate-duration-[1000ms]">2155 Guy St, Montreal, Quebec H3H 2L9</h1>
-            </a>
-        </div>
-    </div>
-</main>
+
 {{ end }}
