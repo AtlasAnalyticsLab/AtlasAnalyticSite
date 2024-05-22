@@ -95,11 +95,11 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				const shadermaterial = new THREE.MeshStandardMaterial({map: texture});
 				THREE.ColorManagement.enabled = true;
 
-                light = new THREE.PointLight(0xffffff,4.5, 1100,0);
-				light4 = new THREE.PointLight(0xffffff,4.5, 1100,0);
-				light2 = new THREE.PointLight(0xffffff,4.5, 1100,0);
+                //light = new THREE.PointLight(0xffffff,4.5, 1100,0);
+				//light4 = new THREE.PointLight(0xffffff,4.5, 1100,0);
+				//light2 = new THREE.PointLight(0xffffff,4.5, 1100,0);
 				//light_helper = new THREE.PointLightHelper(light2, 5, 'red');
-				light3 = new THREE.PointLight(0xffffff,4.5, 1100,0);
+			//	light3 = new THREE.PointLight(0xffffff,4.5, 1100,0);
 				light5 = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.9);
 
 				
@@ -107,11 +107,11 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 			
 				
 				
-                light.position.set(-700, -700, 700);
-				light2.position.set(-700, 700, -700);
-				light3.position.set(700, 700, -700);
-				light4.position.set(700, 700, 700);
-				light5.position.set(0,700, 0)
+             //   light.position.set(-700, -700, 700);
+			//	light2.position.set(-700, 700, -700);
+			//	light3.position.set(700, 700, -700);
+			//	light4.position.set(700, 700, 700);
+			//	light5.position.set(0,700, 0)
 				
 				//light_helper.position.set(0, -700, 0);
 				//light_ambient.position.set(0, -700, 0);
