@@ -92,7 +92,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				
 	
 	
-				const shadermaterial = new THREE.MeshStandardMaterial({map: texture});
+				const shadermaterial = new THREE.MeshPhongMaterial({map: texture});
 				THREE.ColorManagement.enabled = true;
 
                 //light = new THREE.PointLight(0xffffff,4.5, 1100,0);
@@ -153,7 +153,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 		
 				
-                const helper = new THREE.Mesh(new THREE.IcosahedronGeometry(450, 6), shadermaterial);
+                const helper = new THREE.Mesh(new THREE.IcosahedronGeometry(450, 20), shadermaterial);
 
 
                 group.add(helper);
@@ -440,14 +440,10 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 					const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
 					return regex.test(navigator.userAgent);
 				  }
-				if (isMobile()&& window.location.pathname == '/'){
+
+
 					renderer.render( scene, camera );
-				}
-				
-				if (!isMobile()) {
-					renderer.render( scene, camera );
-	
-				}
+
 				
 
 			}
