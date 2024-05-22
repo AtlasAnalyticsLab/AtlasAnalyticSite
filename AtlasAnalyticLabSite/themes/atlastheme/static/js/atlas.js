@@ -45,21 +45,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				particleCount: 500
 			};
 
-			const textureLoader = new THREE.TextureLoader();
-				
-			const texture = textureLoader.load('../textures/download (3).jpg')
 
-			texture.colorSpace = THREE.SRGBColorSpace
-			texture.mapping = THREE.EquirectangularReflectionMapping;
-	
-			
-			texture.flipY = false;
-			
-			
-			
-
-
-			const shadermaterial = new THREE.MeshStandardMaterial({map: texture});
 			
 			
 			
@@ -92,6 +78,21 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 
 			function init() {
+				const textureLoader = new THREE.TextureLoader();
+				
+				const texture = textureLoader.load('../textures/download (3).jpg')
+	
+				texture.colorSpace = THREE.SRGBColorSpace
+				texture.mapping = THREE.EquirectangularReflectionMapping;
+		
+				
+				texture.flipY = false;
+				
+				
+				
+	
+	
+				const shadermaterial = new THREE.MeshStandardMaterial({map: texture});
 				THREE.ColorManagement.enabled = true;
 
                 light = new THREE.PointLight(0xffffff,4.5, 1100,0);
@@ -241,6 +242,9 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
+				function setupWebGLStateAndResources(){
+					init();
+				}
 				
 				
 				
@@ -333,9 +337,9 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				let colorpos = 0;
 				let numConnected = 0;
 
-				if (shadermaterial.userData.shader) {
-					shadermaterial.userData.shader.uniforms.uTime.value += 0.01;
-				}
+			//	if (shadermaterial.userData.shader) {
+				//	shadermaterial.userData.shader.uniforms.uTime.value += 0.01;
+				//}
 				//shadermaterial.userData.shader.uniforms.uTime.value += 0.01;
 			
 				for ( let i = 0; i < particleCount; i ++ )
