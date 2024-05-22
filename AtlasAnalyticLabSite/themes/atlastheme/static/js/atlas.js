@@ -269,6 +269,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 					container.style.backgroundColor = '#121212';
 					container.style.opacity = '.4';
 				}
+
 				console.log(window.getComputedStyle(container).opacity);
 
 
@@ -435,7 +436,18 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				
 
 				group.rotation.y = time * 0.001;
-				renderer.render( scene, camera );
+								function isMobile() {
+					const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+					return regex.test(navigator.userAgent);
+				  }
+				
+				if (!isMobile()) {
+					renderer.render( scene, camera );
+					if (isMobile()&& window.location.pathname == '/'){
+						renderer.render( scene, camera );
+					}
+				}
+				
 
 			}
 
