@@ -232,7 +232,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 					contextPowerPreference = "high-performance";
 				}
 				
-				if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				if (/iPad|iPhone|iPod|Android|Mobi/.test(userAgent) && !window.MSStream) {
 					contextPowerPreference = "high-performance";
 				}
 
