@@ -225,8 +225,19 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				group.position.x = (group.position.x - center.x);
 				group.position.y = (group.position.y - center.y);
 				group.position.z = (group.position.z - center.z);
+				let contextPowerPreference = "default"; // default value
 
-				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+				if (/Mac/i.test(userAgent)) {
+					contextPowerPreference = "high-performance";
+				}
+				
+				if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+					contextPowerPreference = "high-performance";
+				}
+
+				renderer = new THREE.WebGLRenderer( { antialias: true, powerPreference: contextPowerPreference } );
 				
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
@@ -238,6 +249,13 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 				
 				var container = document.getElementById('canvas-container');
+				var canvas = document.getElementById("canvas-container");
+
+				canvas.addEventListener("webglcontextlost", function(event) {
+						event.preventDefault();
+					}, false);
+				canvas.addEventListener(
+						"webglcontextrestored", setupWebGLStateAndResources, false);
 				container.style.position = 'fixed';
 				container.style.top = '0';
 				container.style.left = '0';
