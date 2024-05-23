@@ -268,27 +268,9 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 					container.style.opacity = '.4';
 				}
 
-				function updateTextPosition() {
-					const vector = new THREE.Vector3();
-					const widthHalf = window.innerWidth / 2;
-					const heightHalf = window.innerHeight / 2;
-				  
-					// Get the position of the sphere in screen space
-					helper.updateMatrixWorld();
-					vector.setFromMatrixPosition(helper.matrixWorld);
-					vector.project(camera);
-				  
-					// Convert to screen coordinates
-					vector.x = (vector.x * widthHalf) + widthHalf;
-					vector.y = -(vector.y * heightHalf) + heightHalf;
-				  
-					// Update the text container position
-					const textContainer = document.getElementById('text-container');
-					textContainer.style.left = `${vector.x}px`;
-					textContainer.style.top = `${vector.y}px`;
-				  }
-
 				
+
+				console.log(window.getComputedStyle(container).opacity);
 
 
 				
@@ -437,7 +419,6 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				linesMesh.geometry.attributes.color.needsUpdate = true;
 
 				pointCloud.geometry.attributes.position.needsUpdate = true;
-				updateTextPosition();
 
 				requestAnimationFrame( animate );
 				
@@ -446,12 +427,6 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				render();
 
 			}
-			function onWindowResize() {
-				camera.aspect = window.innerWidth / window.innerHeight;
-				camera.updateProjectionMatrix();
-				renderer.setSize(window.innerWidth, window.innerHeight);
-			  }
-			  window.addEventListener('resize', onWindowResize, false);
 
 			function render() {
 
