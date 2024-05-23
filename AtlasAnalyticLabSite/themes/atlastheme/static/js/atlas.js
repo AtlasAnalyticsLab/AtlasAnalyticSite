@@ -11,10 +11,7 @@ import vertexShaderParse from '../textures/shaders/vertex_pars.glsl';
 import vertexShaderMain from '../textures/shaders/vertex_main.glsl';
 import fragmentMain from '../textures/shaders/fragment_main.glsl';
 import fragmentPars from '../textures/shaders/fragment_pars.glsl';
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
-import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
-import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+
 
 
 
@@ -445,5 +442,3 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				
 
 			}
-
-
