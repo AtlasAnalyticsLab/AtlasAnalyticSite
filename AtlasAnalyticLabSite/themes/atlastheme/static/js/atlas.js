@@ -268,8 +268,6 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 					container.style.opacity = '.4';
 				}
 
-				
-
 				console.log(window.getComputedStyle(container).opacity);
 
 
