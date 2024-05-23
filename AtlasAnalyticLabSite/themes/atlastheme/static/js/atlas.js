@@ -280,6 +280,8 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
                 renderer.domElement.style.position = 'fixed';
                 renderer.domElement.style.top = '0';
                 renderer.domElement.style.left = '0';
+				renderer.domElement.style.width = '100vw';
+				renderer.domElement.style.height = '100vh';
                 renderer.domElement.style.zIndex = '1';
 
                 
