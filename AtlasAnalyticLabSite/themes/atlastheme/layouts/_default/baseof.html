@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class = "scroll-smooth h-full overflow-hidden" lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }} ">
+<html class = "scroll-smooth" lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }} ">
 <script>
   
   document.documentElement.classList.toggle('dark');
@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="/main.css">
   {{ partial "head.html" . }}
 </head>
-<body class="bg-atlas  flex flex-col min-h-screen h-full overflow-hidden">
+<body class="bg-atlas  flex flex-col min-h-screen">
 
   <header class="relative z-50">
     {{ partial "header.html" . }}
