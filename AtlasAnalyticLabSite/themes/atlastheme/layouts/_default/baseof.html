@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class = "scroll-smooth sm:overflow-hidden md:overflow-auto" lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }} ">
+<html class = "scroll-smooth  lang="{{ or site.Language.LanguageCode site.Language.Lang }}" dir="{{ or site.Language.LanguageDirection `ltr` }} ">
 <script>
   
   document.documentElement.classList.toggle('dark');
@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="/main.css">
   {{ partial "head.html" . }}
 </head>
-<body class="bg-atlas  flex flex-col min-h-screen sm:overflow-hidden md:overflow-auto">
+<body class="bg-atlas  flex flex-col min-h-screen">
 
   <header class="relative z-50">
     {{ partial "header.html" . }}
   </header>
   <main class="relative z-30 flex-grow">
 
-    <div id="canvas-container" class="absolute  inset-0 flex justify-center items-center z-1" ></div>
+    <div id="canvas-container" class="absolute  inset-0 flex justify-center items-center z-1 overflow-hidden" ></div>
 
   
 
@@ -33,7 +33,7 @@
 
 
 
-<div id="canvas-container" class="fixed flex justify-center items-center z-1" >
+<div id="canvas-container" class="fixed flex justify-center items-center z-1 overflow-hidden" >
 
   
 
