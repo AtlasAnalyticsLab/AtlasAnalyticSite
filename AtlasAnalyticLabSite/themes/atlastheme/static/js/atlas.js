@@ -116,6 +116,7 @@ import fragmentPars from '../textures/shaders/fragment_pars.glsl';
 				camera.position.z = 1750;
 				camera.position.y = 250;
 				camera.position.x = 0;
+				camera.lookAt(new THREE.Vector3(0, 0, 0));
 				
                 
                 
