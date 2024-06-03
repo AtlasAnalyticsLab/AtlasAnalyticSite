@@ -12,7 +12,7 @@
     {{ $pages := where .Site.Pages "Type" "publications" }}
     {{ range $index, $page := $pages.ByDate.Reverse }}
         {{ if .File }}
-            <div class="scale-100 w-3/5 md:w-3/5 lg:w-3/5 2xl:w-1/2" id="card-{{ $index }}">
+            <div class="scale-100 w-full mx-8 md:mx-0 md:w-3/5 lg:w-3/5 2xl:w-1/2" id="card-{{ $index }}">
                 {{ partial "publication_card.html" . }}
             </div>
         {{ end }}
