@@ -49,6 +49,7 @@ module.exports = {
       '43/100': '43%',
     },
     fontSize: {
+      '2xs': '0.50rem',
       'lgxl': '1.15rem', 
       '1.5xl': '1.4rem',
     }
