@@ -107,7 +107,7 @@
 
     
 
-    <div class="grid md:flex-grow  grid-cols-1 md:mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 2xl:grid-cols-4 lg:mx-48 xl:mx-48 2xl:mx-96">
+    <div class="grid flex-grow md:flex-grow  grid-cols-1 md:mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 2xl:grid-cols-4 lg:mx-48 xl:mx-48 2xl:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">PI Collaborators (Pathologist)</h2>
     
         {{ range .Site.Pages }}
@@ -124,13 +124,13 @@
 
     
 
-    <div class="grid md:flex-grow  grid-cols-1 md:mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 2xl:grid-cols-4 lg:mx-48 xl:mx-48 2xl:mx-96">
+    <div class="grid flex-grow md:flex-grow  grid-cols-1 md:mx-auto md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 2xl:grid-cols-4 lg:mx-48 xl:mx-48 2xl:mx-96">
         <h2 class="text-2xl font-semibold text-white mt-4 text-left col-span-full">PI Collaborators (Engineering and Computer Science)</h2>
     
         {{ range .Site.Pages }}
         {{ if .File }}
             {{ $dir := replace .File.Dir "\\" "/" }}
-            {{ if eq $dir "team/eng_comp_cp;;aborators/" }}
+            {{ if eq $dir "team/eng_comp_collaborators/" }}
                 {{ partial "card.html" . }}
             {{ end }}
         {{ end }}
