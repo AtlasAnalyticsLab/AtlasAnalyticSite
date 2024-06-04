@@ -1,7 +1,8 @@
 baseURL: "https://atlasanalyticslab.ai/"
 languageCode: en-us
-title: Atlas Analytic Lab
+title: Atlas Analytics Lab
 theme: ["atlastheme"]
+enableRobotsTXT: true
 
 menus:
   main:

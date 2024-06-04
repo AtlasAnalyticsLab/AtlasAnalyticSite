@@ -11,10 +11,7 @@ import vertexShaderParse from '../textures/shaders/vertex_pars.glsl';
 import vertexShaderMain from '../textures/shaders/vertex_main.glsl';
 import fragmentMain from '../textures/shaders/fragment_main.glsl';
 import fragmentPars from '../textures/shaders/fragment_pars.glsl';
-import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer.js';
-import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass.js';
-import { ShaderPass } from 'three/examples/jsm/postprocessing/ShaderPass.js';
-import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass.js';
+
 
 
 
@@ -45,21 +42,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				particleCount: 500
 			};
 
-			const textureLoader = new THREE.TextureLoader();
-				
-			const texture = textureLoader.load('../textures/download (3).jpg')
 
-			texture.colorSpace = THREE.SRGBColorSpace
-			texture.mapping = THREE.EquirectangularReflectionMapping;
-	
-			
-			texture.flipY = false;
-			
-			
-			
-
-
-			const shadermaterial = new THREE.MeshStandardMaterial({map: texture});
 			
 			
 			
@@ -92,13 +75,27 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 
 			function init() {
+				const textureLoader = new THREE.TextureLoader();
+				
+				const texture = textureLoader.load('../textures/download (3).jpg')
+	
+				texture.colorSpace = THREE.SRGBColorSpace
+				texture.mapping = THREE.EquirectangularReflectionMapping;
+		
+				
+				texture.flipY = false;
+				
+				
+				
+	
+	
+				const shadermaterial = new THREE.MeshPhongMaterial({map: texture});
 				THREE.ColorManagement.enabled = true;
 
                 light = new THREE.PointLight(0xffffff,4.5, 1100,0);
 				light4 = new THREE.PointLight(0xffffff,4.5, 1100,0);
 				light2 = new THREE.PointLight(0xffffff,4.5, 1100,0);
-				//light_helper = new THREE.PointLightHelper(light2, 5, 'red');
-				light3 = new THREE.PointLight(0xffffff,4.5, 1100,0);
+			light3 = new THREE.PointLight(0xffffff,4.5, 1100,0);
 				light5 = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.9);
 
 				
@@ -106,20 +103,20 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 			
 				
 				
-                light.position.set(-700, -700, 700);
+               light.position.set(-700, -700, 700);
 				light2.position.set(-700, 700, -700);
 				light3.position.set(700, 700, -700);
 				light4.position.set(700, 700, 700);
 				light5.position.set(0,700, 0)
 				
-				//light_helper.position.set(0, -700, 0);
-				//light_ambient.position.set(0, -700, 0);
+
 	
 				
 				camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 4000 );
 				camera.position.z = 1750;
 				camera.position.y = 250;
 				camera.position.x = 0;
+				camera.lookAt(new THREE.Vector3(0, 0, 0));
 				
                 
                 
@@ -152,7 +149,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 		
 				
-                const helper = new THREE.Mesh(new THREE.IcosahedronGeometry(450, 6), shadermaterial);
+                const helper = new THREE.Mesh(new THREE.IcosahedronGeometry(450, 20), shadermaterial);
 
 
                 group.add(helper);
@@ -225,11 +222,25 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				group.position.x = (group.position.x - center.x);
 				group.position.y = (group.position.y - center.y);
 				group.position.z = (group.position.z - center.z);
+				let contextPowerPreference = "default"; // default value
 
-				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+				if (/Mac/i.test(userAgent)) {
+					contextPowerPreference = "high-performance";
+				}
+				
+				if (/iPad|iPhone|iPod|Android|Mobi/.test(userAgent) && !window.MSStream) {
+					contextPowerPreference = "high-performance";
+				}
+
+				renderer = new THREE.WebGLRenderer( { antialias: true, powerPreference: contextPowerPreference } );
 				
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
+				function setupWebGLStateAndResources(){
+					init();
+				}
 				
 				
 				
@@ -238,6 +249,13 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 
 				
 				var container = document.getElementById('canvas-container');
+				var canvas = document.getElementById("canvas-container");
+
+				canvas.addEventListener("webglcontextlost", function(event) {
+						event.preventDefault();
+					}, false);
+				canvas.addEventListener(
+						"webglcontextrestored", setupWebGLStateAndResources, false);
 				container.style.position = 'fixed';
 				container.style.top = '0';
 				container.style.left = '0';
@@ -247,6 +265,7 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 					container.style.backgroundColor = '#121212';
 					container.style.opacity = '.4';
 				}
+
 				console.log(window.getComputedStyle(container).opacity);
 
 
@@ -315,9 +334,9 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				let colorpos = 0;
 				let numConnected = 0;
 
-				if (shadermaterial.userData.shader) {
-					shadermaterial.userData.shader.uniforms.uTime.value += 0.01;
-				}
+			//	if (shadermaterial.userData.shader) {
+				//	shadermaterial.userData.shader.uniforms.uTime.value += 0.01;
+				//}
 				//shadermaterial.userData.shader.uniforms.uTime.value += 0.01;
 			
 				for ( let i = 0; i < particleCount; i ++ )
@@ -413,8 +432,14 @@ import {UnrealBloomPass} from 'three/examples/jsm/postprocessing/UnrealBloomPass
 				
 
 				group.rotation.y = time * 0.001;
-				renderer.render( scene, camera );
+								function isMobile() {
+					const regex = /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+					return regex.test(navigator.userAgent);
+				  }
+
+
+					renderer.render( scene, camera );
+
+				
 
 			}
-
-
