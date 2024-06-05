@@ -1,17 +1,17 @@
 {{define "main"}}
 {{ $path := "../" }}
 
-<h1 class="text-6xl font-semibold text-white text-center animate-fade animate-duration-[1500ms] mt-10">Positions</h1>
-<div class="flex flex-col justify-center items-center">
-    <div class="w-full md:w-2/3 lg:w-1/2 relative z-100">
-        <div class="flex flex-col justify-start  items-start mt-8 mx-auto">
-            <p class="text-white font-semibold text-2xl">Atlas Analytics Lab is always on the lookout for trailblazing graduate students eager to pioneer the next generation of deep learning and computer vision algorithms. Dive deep into the heart of groundbreaking research and focus on the foundational AI with a particular emphasis on transformative applications in computational pathology.</p>
+<h1 class="text-2xl sm:text-4xl md:text-5xl xl:text-6xl font-semibold text-white text-center animate-fade animate-duration-[1500ms] mt-10">Positions</h1>
+<div class="flex flex-col justify-center items-center mb-20">
+    <div class="w-full md:w-4/5 lg:w-2/3 xl:w-2/3 2xl:w-1/2 relative z-100">
+        <div class="flex flex-col justify-center md:justify-start  items-start mt-4 lg:mt-8 mx-4 sm:mx-8 md:mx-auto lg:mx-0">
+            <p class="text-white font-semibold text-xs md:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl">Atlas Analytics Lab is always on the lookout for trailblazing graduate students eager to pioneer the next generation of deep learning and computer vision algorithms. Dive deep into the heart of groundbreaking research and focus on the foundational AI with a particular emphasis on transformative applications in computational pathology.</p>
         </div>
-        <div class="flex flex-col justify-start  items-start mt-8 mx-auto">
-            <p class="text-white font-semibold text-2xl">Please note that while we're currently not seeking MSc students, we're actively seeking out the brightest minds to join our lab for PhD studies. If you're ready to leave your mark on the landscape of AI and shape the future of technology, we invite you to reach out to Professor Mahdi S. Hosseini to explore the boundless opportunities awaiting you at Atlas Analytics Lab.</p>
+        <div class="flex flex-col justify-center md:justify-start  items-start mt-8 mx-4 sm:mx-8 md:mx-auto lg:mx-0">
+            <p class="text-white font-semibold text-xs md:text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-xl">Please note that while we're currently not seeking MSc students, we're actively seeking out the brightest minds to join our lab for PhD studies. If you're ready to leave your mark on the landscape of AI and shape the future of technology, we invite you to reach out to Professor Mahdi S. Hosseini to explore the boundless opportunities awaiting you at Atlas Analytics Lab.</p>
         </div>
-        <div class="flex flex-col justify-start items-start">
-            <h2 class="text-4xl font-semibold text-white animate-fade animate-duration-[1500ms] justify-start mt-10 mb-4">Open Positions</h2>
+        <div class="flex flex-col justify-center md:justify-start items-start mx-4 sm:mx-8 md:mx-auto lg:mx-0">
+            <h2 class="text-xl md:text-2xl xl:text-4xl font-semibold text-white animate-fade animate-duration-[1500ms] justify-start mt-10 mb-4">Open Positions</h2>
 
             {{ $pages := where .Site.Pages "Type" "positions" }}
             {{ range $page := $pages.ByDate.Reverse }}
