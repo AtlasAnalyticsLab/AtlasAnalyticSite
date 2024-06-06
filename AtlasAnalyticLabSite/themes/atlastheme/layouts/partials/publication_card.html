@@ -1,6 +1,6 @@
 {{ $path := "../" }}
 
-<div class="grid grid-cols-11 md:grid-cols-11 lg:grid-cols-10 2xl:grid-cols-13 gap-4 bg-clip-border rounded-xl bg-gray-800 text-white shadow-md w-full h-full mb-4 md:mb-4 ">
+<div class="grid grid-cols-11 md:grid-cols-11 lg:grid-cols-13 2xl:grid-cols-13 gap-4 bg-clip-border rounded-xl bg-gray-800 text-white shadow-md w-full h-full mb-4 md:mb-4 ">
     <div class=" col-span-3 md:col-span-3 lg:col-span-1 2xl:col-span-1 overflow-hidden rounded-r-none bg-clip-border rounded-xl h-full w-full">
       <div class="h-full w-full">
         <img src="{{$path}}/{{.Params.photo}}" alt="{{.Params.name}}" class="object-center h-full w-full object-cover" />
@@ -13,9 +13,9 @@
       <p class="text-white text-lg md:text-1.5xl">
         {{.Params.authors}}<br>
         <em>{{.Params.source}}</em><br>
-        <a href="{{.Params.link}}" class="text-base hover:text-gray-300">[PDF]</a>
+        <a href="{{.Params.link}}" class="text-white text-lg md:text-1.5xl hover:text-gray-300">[PDF]</a>
         {{if .Params.github}}
-        <a href="{{.Params.github}}" class="text-white text-base hover:text-gray-300">[Code]</a>
+        <a href="{{.Params.github}}" class="text-white text-lg md:text-1.5xl hover:text-gray-300">[Code]</a>
         {{end}}
       </p>
     </div>
