@@ -1,4 +1,7 @@
+{{ $path := "../" }}
 <head>
+    
+    <link rel="icon" type="image/x-icon" href="{{$path}}/favicon.ico">
     {{$styles := resources.Get "css/styles.scss" | toCSS | postCSS (dict "config" "./assets/css/postcss.config.js") }}
     {{ if .Site.IsServer}}
     <link rel="stylesheet" href="{{$styles.RelPermalink}}">
