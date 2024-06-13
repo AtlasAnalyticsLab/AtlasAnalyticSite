@@ -13,7 +13,9 @@
       <p class="text-white text-lg md:text-1.5xl">
         {{.Params.authors}}<br>
         <em>{{.Params.source}}</em><br>
+        {{if .Params.link}}
         <a href="{{.Params.link}}" class="text-white text-lg md:text-1.5xl hover:text-gray-300">[PDF]</a>
+        {{end}}
         {{if .Params.github}}
         <a href="{{.Params.github}}" class="text-white text-lg md:text-1.5xl hover:text-gray-300">[Code]</a>
         {{end}}

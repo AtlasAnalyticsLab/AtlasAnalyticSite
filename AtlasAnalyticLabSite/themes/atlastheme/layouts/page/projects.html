@@ -1,12 +1,24 @@
-
-{{ define "main" }}
-
+{{define "main" }}
+{{ $path := "../" }}
 <meta name="description" content="{{ .Site.Params.description }}">
-<div class=" min-h-screen xl:min-h-screen flex flex-col justify-between">
-    <div class="flex-grow flex flex-col justify-center items-center text-center mb-32 ml-2">
-        <h1 class="text-white text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-7xl font-bold select-none animate-fade-down animate-duration-[1000ms]">
-            Stayed Tuned Coming Soon!
-        </h1>
+<div class="flex flex-col justify-start items-center animate-fade animate-duration-[1500ms] ">
+    <h1 class="text-6xl font-semibold text-white text-center animate-fade animate-duration-[1500ms] mt-10 mb-8">Projects</h1>
+</div>
+<div class="flex flex-col items-center relative z-200 mb-4 mx-8 lg:mx-0">
+    <div class="flex flex-col lg:text-left text-center w-full lg:w-4/5 2xl:w-4/5">
+        <p class="text-2xl  lg:text-1.5xl 2xl:text-2xl font-semibold text-white col-span-full"> Atlas Analytics Lab is currently addressing multiple projects in the field of deep learning and computational pathology
+
+        </p>
     </div>
-<div>
-{{ end }}
+</div>
+<div class="flex flex-col justify-start items-center animate-fade animate-duration-[1500ms] mx-8 lg:mx-0">
+    {{ $pages := where .Site.Pages "Type" "projects" }}
+    {{ range $index, $page := $pages.ByDate.Reverse }}
+        {{ if .File }}
+            <div class="w-full lg:w-4/5 2xl:w-4/5" id="card-{{ $index }}">
+                {{ partial "projects_card.html" . }}
+            </div>
+        {{ end }}
+    {{ end }}
+</div>
+{{end}}
